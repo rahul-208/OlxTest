@@ -44,11 +44,25 @@ class FacebookModel
             $fb->setExtendedAccessToken();
             $extendedAccessToken = $fb->getAccessToken();
             $userLikes = $fb->api('/'.$userInfo['id'].'/likes?access_token=' . $extendedAccessToken);
-//            foreach ($userLikes['data'] as $like) {
-//                print_r($like['name']);die;
-//                
-//            }
+            
             return $userLikes;
             
+    }
+    
+    public function getRecomendationData($likes){
+        require_once 'Google/Client.php';
+        require_once 'Google/Service/YouTube.php';
+        $DEVELOPER_KEY = 'REPLACE_ME';
+
+        $client = new Google_Client();
+        $client->setDeveloperKey($DEVELOPER_KEY);
+        $youtube = new Google_Service_YouTube($client);
+        $searchResponse = $youtube->search->listSearch('id,snippet', array(
+            'q' => $_GET['q'],
+            'maxResults' => $_GET['maxResults'],
+        ));
+        
+
+        
     }
 }

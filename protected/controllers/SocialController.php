@@ -30,19 +30,15 @@ class SocialController extends Controller
             'secret' => 'cf43d6c081acaed16c908cac9d49bc07',
         ));
         $fbUser = $facebook->getUser();
-//        if ($fbUser) {
-//            
-//        } else {
-            $loginUrl = $facebook->getLoginUrl(
-                    array(
-                        'redirect_uri' => "http://localhost/olx/index.php?r=/social/listing",
-                        'cancel_uri'   => '',
-                        'scope'        => 'email,user_likes'
-                    )
-            );
-            $this->redirect($loginUrl);
-            die();
-       // }
+        $loginUrl = $facebook->getLoginUrl(
+            array(
+                'redirect_uri' => "http://localhost/olx/index.php?r=/social/listing",
+                'cancel_uri'   => '',
+                'scope'        => 'email,user_likes'
+            )
+        );
+        $this->redirect($loginUrl);
+        die();
         $this->render('login',array('data'=>array('facebook' => $facebook)));
     }
 }
