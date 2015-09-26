@@ -13,22 +13,10 @@ class SocialController extends Controller
             'appId'  => '894567207287021',
             'secret' => 'cf43d6c081acaed16c908cac9d49bc07',
         ));
-        
         $model = new FacebookModel();
         $customer = $model->setCustomer($fb);
-        
-//        $request = new FacebookRequest(
-//        $session,
-//        'GET',
-//        '/{user-id}/likes'
-//        );
-//        $response = $request->execute();
-//        $graphObject = $response->getGraphObject();
-
-        // User is logged in with a long-lived access token.
-        // You can redirect them to a members-only page.
-        //header('Location: https://example.com/members.php');
-        $this->render('list',array('data'=>array()));
+        $getLikes = $model->getLikes($fb);
+        $this->render('list',array('data'=>array('customer' => $customer, 'getLikes' => $getLikes)));
     }
     
     /**
@@ -49,7 +37,7 @@ class SocialController extends Controller
                     array(
                         'redirect_uri' => "http://localhost/olx/index.php?r=/social/listing",
                         'cancel_uri'   => '',
-                        'scope'        => 'email'
+                        'scope'        => 'email,user_likes'
                     )
             );
             $this->redirect($loginUrl);

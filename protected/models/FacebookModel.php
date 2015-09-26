@@ -9,6 +9,7 @@ class FacebookModel
     public function setCustomer($fb){
         try {
             $fbUserInfo['id'] = $fb->getUser();
+            //print_r($fb->getUser());die;
             $fbUserInfo['accessToken'] = $fb->getAccessToken();
         } catch (Exception $e) {
             echo 'Graph returned error';
@@ -35,5 +36,19 @@ class FacebookModel
         }
         
         return $fbUserInfo['id'];
+    }
+    
+    public function getLikes($fb)
+    {
+        $userInfo = Yii::app()->session->get('customer');
+            $fb->setExtendedAccessToken();
+            $extendedAccessToken = $fb->getAccessToken();
+            $userLikes = $fb->api('/'.$userInfo['id'].'/likes?access_token=' . $extendedAccessToken);
+//            foreach ($userLikes['data'] as $like) {
+//                print_r($like['name']);die;
+//                
+//            }
+            return $userLikes;
+            
     }
 }

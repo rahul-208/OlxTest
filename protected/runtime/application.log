@@ -299,3 +299,46 @@ Stack trace:
 REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAZeQvLNv0B4JiOMAwjgZthBudC87Rfoku2eDqcoJ3gn-WyMnIeUEG6cXIaMAv4CBVyq0maTEctBLQSIeqxjMUS3w_AvYE4msAbqQBA4KFKOWSjIKse5tGkKeDOxAH0HIzUk9Y5bFmjW-Ab_lum0ukQwgC3TCmlHzbmlTEoVoRe1wWvdL01Zim4okBbeB3Oxi_fDVPTa8zQm5q7WMLlJC9pktxn9-MhW0deP2nqmw4p9zyGfqbKQetzLJvFICbAHrV7tiGRG7hhGXsiT4RPbFBdJJOpl41udxw6wt_iZVOVm8SMCM7bnfwGM1L6zIuIaZokQNQM_FQxKEDeovMIMbl4&state=d4a392269b955572643a6edc1e65d8ac
 HTTP_REFERER=http://localhost/olx/index.php?r=site/login
 ---
+2015/09/26 15:23:56 [error] [exception.FacebookApiException] GraphMethodException: No node specified
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQBuY7o1SPR05mKc_pLENp1DgiWkZGIaCzM7zRyohoZ_hD2B5GRRcKBkmlemaKzs4GH_DMipEtD3pOxSvUNson_QxQC86LLbcEH53jGsTTlHZKfDuBKZkrdxV7iAaS8ywUCFIG4BsNH1vc0ajWxNh8MeQVm5ZGwHmi4TQOOvgmojTRS9YCOwR7MyZ6CZCtWl-at3TCijS6MrZJCZjP9svw-MmHhxk7Q9ponTwNS4vrzHDqWLCMmVB3SPGplb0qHkjYKonuOWulsFDxasxnrkv1IYlOQ_LiPzqKoNEiY1uhzH3Q1AMvXDmIv4BFa-S08lW3KQWfBnY8O6DWvEMb62wMIo&state=c14fe7fcb2b1a63a2433ebd9419b5116
+---
+2015/09/26 15:25:37 [error] [exception.FacebookApiException] GraphMethodException: No node specified
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQBuY7o1SPR05mKc_pLENp1DgiWkZGIaCzM7zRyohoZ_hD2B5GRRcKBkmlemaKzs4GH_DMipEtD3pOxSvUNson_QxQC86LLbcEH53jGsTTlHZKfDuBKZkrdxV7iAaS8ywUCFIG4BsNH1vc0ajWxNh8MeQVm5ZGwHmi4TQOOvgmojTRS9YCOwR7MyZ6CZCtWl-at3TCijS6MrZJCZjP9svw-MmHhxk7Q9ponTwNS4vrzHDqWLCMmVB3SPGplb0qHkjYKonuOWulsFDxasxnrkv1IYlOQ_LiPzqKoNEiY1uhzH3Q1AMvXDmIv4BFa-S08lW3KQWfBnY8O6DWvEMb62wMIo&state=c14fe7fcb2b1a63a2433ebd9419b5116
+---
+2015/09/26 15:50:00 [error] [exception.FacebookApiException] CurlException: 28: Operation timed out after 10409 milliseconds with 0 out of 0 bytes received
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQCp_uhhKkpVINZSXXojtCBJggIRqv9u1I8Ykra_OV-UyUkoRczCoePA-cQQ44q-fT-3r0yI8fIX1Qvpfzf3_K_qOmgMxcEWQwrJakeKmowvsumKbhd0IDlVqKesKVp5WHHbbGi8BTpS8ViT2Vk_ZBHqH0zmPOqmor5SHHaf-6EmPZO0Xik3ofTal-EG78I8LGrFZrwa2UwMtsbwMehZsL0WQRy1MhEwmLm8D2dzHvkwhE5Enx9wf2ZpPUKDm8dEj_1rg-vkfbGp7Iw6BrNb_-S3RYNr5dKibxz1AmD8sMem8Mderhls2t2YYHPzqfWf4qsPNGOFB3GvcYRznoR4WGjv&state=54b84e93ff26e5b38a5eccb3bcb8770a
+---
+2015/09/26 16:01:56 [error] [php] Undefined variable: getLikes (/var/www/olx/protected/views/social/list.php:5)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(869): SocialController->renderFile()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(782): SocialController->renderPartial()
+#2 /var/www/olx/protected/controllers/SocialController.php(19): SocialController->render()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQCHJzU8y_oLzEvhCke8U6pg4ApWTlMsH_l14-g5ufDWw8dnGEtdKyAddRfI4E7E-lQIw2m1GD0VRdDfhApFXQFpr9Tupw1eKKzKJhRi8mLT_zF5YoQG-lkaZW2gYv_OAcZ2iVYUz5A3qXQ8I0niFr0mE8TwIiogcI41_KkmQq0nfQTEuc9qIL0Vz5__6wE2inG4czP8tfHzRLQhK6eauOMbuMLHkTZOF_f4-svSElyU18m5JH-J5TpfxPUxLAkwH3ALtNjTVhppbz7wWZzm0PHqIbx_HiDogrLaHSpYYRZ2IxMkcXFo3iBecEhrzjEQ-THaKf_WgyJDB90c7rS-99Jc&state=16c234ebb85ec715a0e2841ba822f381
+in /var/www/olx/protected/views/social/list.php (5)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 16:02:26 [error] [php] Undefined variable: getLikes (/var/www/olx/protected/views/social/list.php:5)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(869): SocialController->renderFile()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(782): SocialController->renderPartial()
+#2 /var/www/olx/protected/controllers/SocialController.php(19): SocialController->render()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQCHJzU8y_oLzEvhCke8U6pg4ApWTlMsH_l14-g5ufDWw8dnGEtdKyAddRfI4E7E-lQIw2m1GD0VRdDfhApFXQFpr9Tupw1eKKzKJhRi8mLT_zF5YoQG-lkaZW2gYv_OAcZ2iVYUz5A3qXQ8I0niFr0mE8TwIiogcI41_KkmQq0nfQTEuc9qIL0Vz5__6wE2inG4czP8tfHzRLQhK6eauOMbuMLHkTZOF_f4-svSElyU18m5JH-J5TpfxPUxLAkwH3ALtNjTVhppbz7wWZzm0PHqIbx_HiDogrLaHSpYYRZ2IxMkcXFo3iBecEhrzjEQ-THaKf_WgyJDB90c7rS-99Jc&state=16c234ebb85ec715a0e2841ba822f381
+in /var/www/olx/protected/views/social/list.php (5)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
