@@ -1,0 +1,301 @@
+2015/09/26 11:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "social/listing".' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('social/listing')
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/olx/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/olx/index.php?r=social/listing
+---
+2015/09/26 11:29:13 [error] [exception.CException] exception 'CException' with message 'SocialController cannot find the requested view "list".' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php:878
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(782): CController->renderPartial('list', Array, true)
+#1 /var/www/olx/protected/controllers/SocialController.php(11): CController->render('list', Array)
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('social/listing')
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/olx/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/olx/index.php?r=social/listing
+---
+2015/09/26 11:30:32 [error] [exception.CException] exception 'CException' with message 'SocialController cannot find the requested view "list".' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php:878
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(782): CController->renderPartial('list', Array, true)
+#1 /var/www/olx/protected/controllers/SocialController.php(11): CController->render('list', Array)
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('social/listing')
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/olx/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/olx/index.php?r=social/listing
+---
+2015/09/26 12:41:53 [error] [php] require(../extensions/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:42:20 [error] [php] require(../../extensions/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:42:26 [error] [php] require(extensions/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:50:47 [error] [php] require(vendor/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:50:57 [error] [php] require(../vendor/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:51:06 [error] [php] require(../../vendor/facebook-php-sdk/src/facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 12:56:41 [error] [php] Undefined variable: facebook (/var/www/olx/protected/views/social/login.php:3)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(869): SocialController->renderFile()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(782): SocialController->renderPartial()
+#2 /var/www/olx/protected/controllers/SocialController.php(25): SocialController->render()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionlogin()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/views/social/login.php (3)
+in /var/www/olx/protected/controllers/SocialController.php (25)
+in /var/www/olx/index.php (13)
+2015/09/26 13:27:32 [error] [php] include(Facebook.php): failed to open stream: No such file or directory (/home/rahul/Downloads/yii-1.1.16.bca042/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/olx/protected/controllers/SocialController.php(20): spl_autoload_call()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionlogin()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (20)
+in /var/www/olx/index.php (13)
+2015/09/26 13:27:49 [error] [php] require_once(/var/www/olx/protected/vendor/facebook-php-sdk/src/Facebook.php): failed to open stream: No such file or directory (/var/www/olx/protected/controllers/SocialController.php:19)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/protected/controllers/SocialController.php (19)
+in /var/www/olx/index.php (13)
+2015/09/26 13:28:25 [error] [php] Undefined variable: faceBookObj (/var/www/olx/protected/controllers/SocialController.php:24)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (24)
+in /var/www/olx/index.php (13)
+2015/09/26 13:28:35 [error] [php] Undefined variable: faceBookObj (/var/www/olx/protected/controllers/SocialController.php:24)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (24)
+in /var/www/olx/index.php (13)
+2015/09/26 13:28:55 [error] [php] Undefined variable: faceBookObj (/var/www/olx/protected/controllers/SocialController.php:24)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (24)
+in /var/www/olx/index.php (13)
+2015/09/26 13:28:55 [error] [php] Undefined variable: faceBookObj (/var/www/olx/protected/controllers/SocialController.php:24)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=social/login
+in /var/www/olx/protected/controllers/SocialController.php (24)
+in /var/www/olx/index.php (13)
+2015/09/26 13:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "social".' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php:483
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(270): CController->missingAction('social')
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('social')
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('social/social/l...')
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/olx/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/olx/index.php?r=social%2Fsocial%2Flisting&code=AQCSokLFzkH7Qw3WJs8r3EL2QrzgpZjBeSnv9Z-bT9DmN5koLLekMRcZB9vQdRSEcX-njoSi2M2S2zFu-cXFySPbFquQoC1RM8Zh19cQeZJqVdCDWvs4BFbwdpjeZTJH0cGdIs4dYxbx22xKrjlOAPkIXOaBHJLHXxPC8G4gZkvf0hgO7EKiS_4P9iW8XMo9ZV2z_qeflYSLrw78eYzvaQQcSgo70qT8ifiKqZ4uoR1xEFgVZCtQBXGla0fusjGY1eHZAzRzLwQgc5o9LWuZDwF79k1mSP4SZIqo33zeoF5-KKgCWXVAgh3qjhG-PtDvCCS3Q6R4fYdZp9qvOYaTDpTO&state=9f019dbf16094ea40ce2884e47ed6ba0
+---
+2015/09/26 14:11:23 [error] [php] Undefined variable: helper (/var/www/olx/protected/controllers/SocialController.php:20)
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): SocialController->runAction()
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): SocialController->runActionWithFilters()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): SocialController->run()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/olx/index.php(13): CWebApplication->run()
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAw5EmWMRxSh2UtEakLeb6X0GutMDi9WrchUqmHRbdIbh_nNN25EMIoCq05aHXXy5kM0dqBan4swKdsjb7AXkKmiMorC_Ap-uXCG44l7aw3_MXPoWEi70tu215ZfF2UCX6ZejlIm5DAJr3g8NDV4ygZeVq3D-NRH3Rvycjc1dwEQ3rgBgzCSKQqdogDDnto0aHbFanyo4VpdhhKPOPkSfqNQWsnNwZ87zYEHmzXa8wvHRqePFDLArlwgJj2oIzsjDaeg9AIR6UpvSdjftvUH3ondB_W6tR9wQbOd3HogHmTIUdfKRZU9_JOlwcqKou5ofGu4tb8cMaRUMb8mqZsdEU8&state=ba20e0463569f01bafa95e373b66ed87
+in /var/www/olx/protected/controllers/SocialController.php (20)
+in /var/www/olx/index.php (13)
+2015/09/26 14:24:53 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication._id" is not defined.' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/olx/protected/controllers/SocialController.php(27): CComponent->__set('_id', '114151405254418...')
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('/social/listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/olx/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQCYN78lSE59rZU_PZzsU9spIOVsznk_QNaRW3mHcuECtq13JbRFxPi-4bro4Lv8V5AiIdOMWOmc3km71Bf5o046z_AkASsNVLyOv4Fa9yH5RyEUUTstkYBZgNECjirkNJKhw8MbpnLIyJ-VA8x061SyYqajbhxv_r7dCePJdnuiZ3Ym481OtdfKL8FJ3EM5KnJZxQO27zxC_hcBirkX7UV1cTA1PkNcBPQjII0Jfjp7yeuYapPEKaJIVQPeEp-ILOf0z5_DF2QrB_ZAbPL3Q9M-bwmGZtJ6BG4VI6XtgFHJ_uXuuVdFGeTZqdSrKnYvd6kSF5Feb75_K6RaqS0OnWid&state=e4e4cb7930ba9ea7c1ea4ecd9e8c030d
+---
+2015/09/26 14:25:13 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication._id" is not defined.' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/olx/protected/controllers/SocialController.php(27): CComponent->__set('_id', '114151405254418...')
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('/social/listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/olx/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAZeQvLNv0B4JiOMAwjgZthBudC87Rfoku2eDqcoJ3gn-WyMnIeUEG6cXIaMAv4CBVyq0maTEctBLQSIeqxjMUS3w_AvYE4msAbqQBA4KFKOWSjIKse5tGkKeDOxAH0HIzUk9Y5bFmjW-Ab_lum0ukQwgC3TCmlHzbmlTEoVoRe1wWvdL01Zim4okBbeB3Oxi_fDVPTa8zQm5q7WMLlJC9pktxn9-MhW0deP2nqmw4p9zyGfqbKQetzLJvFICbAHrV7tiGRG7hhGXsiT4RPbFBdJJOpl41udxw6wt_iZVOVm8SMCM7bnfwGM1L6zIuIaZokQNQM_FQxKEDeovMIMbl4&state=d4a392269b955572643a6edc1e65d8ac
+HTTP_REFERER=http://localhost/olx/index.php?r=site/login
+---
+2015/09/26 14:25:39 [error] [exception.CException] exception 'CException' with message 'Property "SocialController._id" is not defined.' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/olx/protected/controllers/SocialController.php(27): CComponent->__set('_id', '114151405254418...')
+#1 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('/social/listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/olx/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAZeQvLNv0B4JiOMAwjgZthBudC87Rfoku2eDqcoJ3gn-WyMnIeUEG6cXIaMAv4CBVyq0maTEctBLQSIeqxjMUS3w_AvYE4msAbqQBA4KFKOWSjIKse5tGkKeDOxAH0HIzUk9Y5bFmjW-Ab_lum0ukQwgC3TCmlHzbmlTEoVoRe1wWvdL01Zim4okBbeB3Oxi_fDVPTa8zQm5q7WMLlJC9pktxn9-MhW0deP2nqmw4p9zyGfqbKQetzLJvFICbAHrV7tiGRG7hhGXsiT4RPbFBdJJOpl41udxw6wt_iZVOVm8SMCM7bnfwGM1L6zIuIaZokQNQM_FQxKEDeovMIMbl4&state=d4a392269b955572643a6edc1e65d8ac
+HTTP_REFERER=http://localhost/olx/index.php?r=site/login
+---
+2015/09/26 14:26:20 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isGuest".' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/olx/protected/controllers/SocialController.php(27): CComponent->__call('isGuest', Array)
+#1 /var/www/olx/protected/controllers/SocialController.php(27): CWebUser->isGuest(false)
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('/social/listing')
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/olx/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAZeQvLNv0B4JiOMAwjgZthBudC87Rfoku2eDqcoJ3gn-WyMnIeUEG6cXIaMAv4CBVyq0maTEctBLQSIeqxjMUS3w_AvYE4msAbqQBA4KFKOWSjIKse5tGkKeDOxAH0HIzUk9Y5bFmjW-Ab_lum0ukQwgC3TCmlHzbmlTEoVoRe1wWvdL01Zim4okBbeB3Oxi_fDVPTa8zQm5q7WMLlJC9pktxn9-MhW0deP2nqmw4p9zyGfqbKQetzLJvFICbAHrV7tiGRG7hhGXsiT4RPbFBdJJOpl41udxw6wt_iZVOVm8SMCM7bnfwGM1L6zIuIaZokQNQM_FQxKEDeovMIMbl4&state=d4a392269b955572643a6edc1e65d8ac
+HTTP_REFERER=http://localhost/olx/index.php?r=site/login
+---
+2015/09/26 14:26:39 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isGuest" is read only.' in /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CComponent.php:170
+Stack trace:
+#0 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/auth/CWebUser.php(160): CComponent->__set('isGuest', false)
+#1 /var/www/olx/protected/controllers/SocialController.php(27): CWebUser->__set('isGuest', false)
+#2 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/actions/CInlineAction.php(49): SocialController->actionListing()
+#3 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(282): CController->run('listing')
+#7 /home/rahul/Downloads/yii-1.1.16.bca042/framework/web/CWebApplication.php(141): CWebApplication->runController('/social/listing')
+#8 /home/rahul/Downloads/yii-1.1.16.bca042/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/olx/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/olx/index.php?r=%2Fsocial%2Flisting&code=AQAZeQvLNv0B4JiOMAwjgZthBudC87Rfoku2eDqcoJ3gn-WyMnIeUEG6cXIaMAv4CBVyq0maTEctBLQSIeqxjMUS3w_AvYE4msAbqQBA4KFKOWSjIKse5tGkKeDOxAH0HIzUk9Y5bFmjW-Ab_lum0ukQwgC3TCmlHzbmlTEoVoRe1wWvdL01Zim4okBbeB3Oxi_fDVPTa8zQm5q7WMLlJC9pktxn9-MhW0deP2nqmw4p9zyGfqbKQetzLJvFICbAHrV7tiGRG7hhGXsiT4RPbFBdJJOpl41udxw6wt_iZVOVm8SMCM7bnfwGM1L6zIuIaZokQNQM_FQxKEDeovMIMbl4&state=d4a392269b955572643a6edc1e65d8ac
+HTTP_REFERER=http://localhost/olx/index.php?r=site/login
+---
